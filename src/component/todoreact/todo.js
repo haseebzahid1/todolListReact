@@ -26,7 +26,9 @@ const Todo = () => {
   };
 
   // remove all the elements
-   
+   const removeAll = () =>{
+       setItems([]);
+   };
     return (
         <div className="main-div">
             <div className="child-div">
@@ -69,7 +71,8 @@ const Todo = () => {
                         <div className="showItems">
                             <button
                                 className="btn effect04"
-                                data-sm-link-text="Remove All">
+                                data-sm-link-text="Remove All"
+                                onClick={removeAll}>
                                 <span> CHECK LIST</span>
                             </button>
                         </div>
